@@ -18,3 +18,4 @@ sudo sed -i 's|Alias /zabbix|Alias /activeSONOR|g' /etc/apache2/conf-available/z
 sudo systemctl restart zabbix-server.service apache2.service zabbix-agent.service
 
 echo "Rebranding has been done. Kindly refresh and/or clear your browser's cache to see the changes."
+echo "When accessing the URL, use <ip>/activeSONOR or <domain>/activeSONOR"
