@@ -13,6 +13,8 @@ convert favicon.png -define icon:auto-resize=256,64,48,32,16 favicon.ico
 
 sudo cp favicon.ico /usr/share/zabbix/favicon.ico
 
+sudo sed -i 's|Alias /zabbix|Alias /activeSONOR|g' /etc/apache2/conf-available/zabbix.conf
+
 sudo systemctl restart zabbix-server.service apache2.service zabbix-agent.service
 
 echo "Rebranding has been done. Kindly refresh and/or clear your browser's cache to see the changes."
