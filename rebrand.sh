@@ -8,9 +8,7 @@ sudo cp page_header.php /usr/share/zabbix/include/page_header.php
 sudo cp CBrandHelper.php /usr/share/zabbix/include/classes/helpers/CBrandHelper.php
 sudo cp general.login.php /usr/share/zabbix/include/views/general.login.php 
 sudo cp administration.system.info.php /usr/share/zabbix/app/partials/administration.system.info.php 
-
-convert favicon.png -define icon:auto-resize=256,64,48,32,16 favicon.ico
-
+sudo cp brand.conf.php /usr/share/zabbix/local/conf/brand.conf.php
 sudo cp favicon.ico /usr/share/zabbix/favicon.ico
 
 sudo sed -i 's|Alias /zabbix|Alias /activeSONOR|g' /etc/apache2/conf-available/zabbix.conf
